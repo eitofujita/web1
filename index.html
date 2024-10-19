@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1</title>
+</head>
+<body>
+
+    <h1>Маркированный список гиперссылок</h1>
+    <ul>
+     
+        <li><a href="http://www.kubsu.ru">Абсолютная ссылка на главную страницу kubsu.ru</a></li>
+
+      
+        <li><a href="https://www.kubsu.ru">Абсолютная ссылка на главную страницу kubsu.ru с https</a></li>
+
+        
+        <li><a><img src=" /images/02_parkkrasnodar.jpg" ></a></li>
+
+        
+        <li><a href="/about/about.html">Короткая ссылка на внутреннюю страницу</a></li>
+
+       
+        <li><a href="/home/home.html">Короткая ссылка на главную страницу</a></li>
+
+
+        <a href="section.html#section1">Ссылка на первую секцию</a></li>
+       
+        <a href="section2.html#section2">Ссылка на вторую секцию</a></li>
+
+       
+        <li><a href="https://example.com/page?param1=value1&param2=value2&param3=value3">Ссылка с тремя параметрами в URL</a></li>
+
+        
+        <li><a href="https://example.com/page?id=123">Ссылка с параметром id в URL</a></li>
+
+        
+        <li><a href="./page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+
+      
+
+        <li><a href="../page.html">Относительная ссылка на страницу в каталоге уровнем выше</a></li>
+
+        
+        <li><a href="../../page.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+
+       
+        <li>Этот абзац содержит <a href="https://youtu.be/N6D8peh7DFI?si=wGJMZioA5xr06Tbn">ссылку</a>.</li>
+
+      
+        <li><a href="https://youtu.be/VISIvMP8kl4?si=X284XXzUzPLrD8q9">Ссылка на фрагмент страницы стороннего сайта</a></li>
+
+        
+       
+    
+        
+       
+        <img src="/images/jikoshoukai.jpg" usemap="#image-map" alt="自己紹介の画像">
+        <map name="image-map">
+            
+            <area shape="circle" coords="350,250,100" href="https://youtu.be/hRcnMY6WOXM" alt="自己紹介">
+        
+           
+            <area shape="circle" coords="500,150,700,250" href="https://youtu.be/BpVTNTG4MI4" alt="プロフィール">
+        
+            
+            <area shape="circle" coords="50,650,250,700" href="https://x.com/tjitton" alt="Twitter">
+        
+            <
+            <area shape="circle" coords="300,650,500,700" href="https://www.instagram.com/eitwell226" alt="Instagram">
+        </map>
+        
+
+        
+      
+
+       
+        <li><a href="">Ссылка с пустым href</a></li>
+
+        
+        <li><a>Ссылка без href</a></li>
+
+       
+        <li><a href="https://example.com/product123" rel="nofollow">Купить продукт</a></li>
+
+      
+        <li><a href="https://example.com/privacy-policy" rel="noindex">Политика конфиденциальности</a></li>
+
+
+        
+        <li><a href="https://example.com/profile" title="Персональный профиль">Профиль</a></li>
+        <li><a href="https://example.com/contact" title="Связаться с нами">Контакты</a></li>
+        
+
+        
+        <li><a href="ftp://user:fifatvgame@gmail.com/file.zip">Ссылка на файл на сервере FTP с авторизацией</a></li>
+    </ul>
+
+    <h2>Форма</h2>
+    <form action="/submit" method="post">
+        <label for="name">ФИО:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="tel">Телефон:</label>
+        <input type="tel" id="tel" name="tel"><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="dob">Дата рождения:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label>Пол:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Мужской</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Женский</label><br><br>
+
+        <label for="lang">Любимый язык программирования:</label>
+        <select id="lang" name="lang[]" multiple>
+            <option value="pascal">Pascal</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="js">JavaScript</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="haskell">Haskell</option>
+            <option value="clojure">Clojure</option>
+            <option value="prolog">Prolog</option>
+            <option value="scala">Scala</option>
+        </select><br><br>
+
+        <label for="bio">Биография:</label><br>
+        <textarea id="bio" name="bio"></textarea><br><br>
+
+        <label for="agreement">С контрактом ознакомлен:</label>
+        <input type="checkbox" id="agreement" name="agreement" value="yes"><br><br>
+
+        <button type="submit">Сохранить</button>
+    </form>
+
+</body>
+</html>
